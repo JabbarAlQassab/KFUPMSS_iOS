@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KFUPM_space" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,5 +145,97 @@
             </objects>
             <point key="canvasLocation" x="2092" y="23"/>
         </scene>
+        <!--Blog-->
+        <scene sceneID="hcU-Cl-bP1">
+            <objects>
+                <viewController id="93S-gf-fAb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zRQ-YG-5nn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y0Q-cS-hgM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blog" image="icons8-blog-filled-30.png" id="QLy-l8-gXX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfy-s5-qfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4281" y="1218"/>
+        </scene>
+        <!--Roommate-->
+        <scene sceneID="it3-ir-WYJ">
+            <objects>
+                <viewController id="VZp-91-nKh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="owK-XO-pyP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ewd-es-oZl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roommate" image="icons8-hostel-filled-30.png" id="36U-ni-Jhv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mlU-y8-8pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4281" y="-2416"/>
+        </scene>
+        <!--chat-->
+        <scene sceneID="aaP-PA-jkc">
+            <objects>
+                <viewController id="nqm-Zh-vTj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kg3-Kf-bd0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g4T-qI-9dh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="chat" image="icons8-chat-filled-30.png" id="fbb-ze-G2q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzB-7L-SYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4281" y="-1015"/>
+        </scene>
+        <!--Market-->
+        <scene sceneID="Bvh-Kz-KS8">
+            <objects>
+                <viewController id="jp6-X5-MaG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ie-Yk-0Uk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Tbd-tN-xJY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Market" image="icons8-shopping-cart-30.png" id="cfv-wE-l42">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCc-op-IgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4281" y="235"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ygv-Tc-3Vu">
+            <objects>
+                <tabBarController id="yzg-Eh-ddi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3uD-eX-ebY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nqm-Zh-vTj" kind="relationship" relationship="viewControllers" id="4vs-c1-Hdz"/>
+                        <segue destination="93S-gf-fAb" kind="relationship" relationship="viewControllers" id="gKA-jc-1ur"/>
+                        <segue destination="VZp-91-nKh" kind="relationship" relationship="viewControllers" id="6Dy-I1-BN5"/>
+                        <segue destination="jp6-X5-MaG" kind="relationship" relationship="viewControllers" id="cCP-4b-VQa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5g-it-SJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086" y="92"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icons8-blog-filled-30.png" width="30" height="30"/>
+        <image name="icons8-chat-filled-30.png" width="30" height="30"/>
+        <image name="icons8-hostel-filled-30.png" width="30" height="30"/>
+        <image name="icons8-shopping-cart-30.png" width="30" height="30"/>
+    </resources>
 </document>
