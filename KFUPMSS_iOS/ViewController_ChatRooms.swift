@@ -16,10 +16,10 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
     }
     
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     //   let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "chatRoom")
-       // cell.textLabel?.text = list[indexPath.row]
+       let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "chatRoom")
+        cell.textLabel?.text = list[indexPath.row]
         
-    //   return()
+       return(cell)
    }
     
 
