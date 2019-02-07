@@ -11,8 +11,6 @@
 		0C5109D9220B05F300AB3781 /* icons8-chat-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */; };
 		0C5109DA220B05F300AB3781 /* icons8-blog-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D5220B05F200AB3781 /* icons8-blog-filled-30.png */; };
 		0C5109DB220B05F300AB3781 /* icons8-hostel-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */; };
-		0C5109DC220B05F300AB3781 /* kfupm-seal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D7220B05F300AB3781 /* kfupm-seal.png */; };
-		0C5109E2220B75B000AB3781 /* ViewController_ChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */; };
 		123AC5A22209FD9B003D51F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A12209FD9B003D51F7 /* AppDelegate.swift */; };
 		123AC5A42209FD9B003D51F7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A32209FD9B003D51F7 /* RootViewController.swift */; };
 		123AC5A62209FD9B003D51F7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A52209FD9B003D51F7 /* DataViewController.swift */; };
@@ -22,7 +20,11 @@
 		123AC5B02209FD9C003D51F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123AC5AE2209FD9C003D51F7 /* LaunchScreen.storyboard */; };
 		123AC5BB2209FD9D003D51F7 /* KFUPMSS_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5BA2209FD9D003D51F7 /* KFUPMSS_iOSTests.swift */; };
 		123AC5C62209FD9D003D51F7 /* KFUPMSS_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5C52209FD9D003D51F7 /* KFUPMSS_iOSUITests.swift */; };
-		123AC5D4220A0115003D51F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 123AC5D3220A0115003D51F7 /* GoogleService-Info.plist */; };
+		127E9003220BB0C000004D2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 127E9002220BB0C000004D2B /* GoogleService-Info.plist */; };
+		1294E5E4220B8BE00002260A /* ViewController_ChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294E5E3220B8BE00002260A /* ViewController_ChatRooms.swift */; };
+		1294E5E6220B8BE90002260A /* kfupm-seal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294E5E5220B8BE90002260A /* kfupm-seal.png */; };
+		1294E5E8220B8CA00002260A /* ViewController_Sign_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294E5E7220B8CA00002260A /* ViewController_Sign_in.swift */; };
+		1294E5EA220B8D960002260A /* ViewController_Sign_up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1294E5E9220B8D960002260A /* ViewController_Sign_up.swift */; };
 		50381A6FEC9AE116D0275988 /* Pods_KFUPMSS_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A98219559DE8F064AC6042A /* Pods_KFUPMSS_iOS.framework */; };
 		527FD1FAD03FA206CC01960C /* Pods_KFUPMSS_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA84E51C64D2E54DE2D1F9E6 /* Pods_KFUPMSS_iOSUITests.framework */; };
 		CE559E072063FC4065A4353E /* Pods_KFUPMSS_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99B96F5D9056D125421F232 /* Pods_KFUPMSS_iOSTests.framework */; };
@@ -50,8 +52,6 @@
 		0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-chat-filled-30.png"; sourceTree = "<group>"; };
 		0C5109D5220B05F200AB3781 /* icons8-blog-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-blog-filled-30.png"; sourceTree = "<group>"; };
 		0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-hostel-filled-30.png"; sourceTree = "<group>"; };
-		0C5109D7220B05F300AB3781 /* kfupm-seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kfupm-seal.png"; path = "../../../../Desktop/KFUPM-space/KFUPM-space/kfupm-seal.png"; sourceTree = "<group>"; };
-		0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController_ChatRooms.swift; path = /Users/m/Documents/GitHub/KFUPMSS_iOS/KFUPMSS_iOS/ViewController_ChatRooms.swift; sourceTree = "<absolute>"; };
 		123AC59E2209FD9B003D51F7 /* KFUPMSS_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFUPMSS_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123AC5A12209FD9B003D51F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123AC5A32209FD9B003D51F7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +67,11 @@
 		123AC5C12209FD9D003D51F7 /* KFUPMSS_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFUPMSS_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123AC5C52209FD9D003D51F7 /* KFUPMSS_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFUPMSS_iOSUITests.swift; sourceTree = "<group>"; };
 		123AC5C72209FD9D003D51F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		123AC5D3220A0115003D51F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		127E9002220BB0C000004D2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		1294E5E3220B8BE00002260A /* ViewController_ChatRooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_ChatRooms.swift; sourceTree = "<group>"; };
+		1294E5E5220B8BE90002260A /* kfupm-seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kfupm-seal.png"; sourceTree = "<group>"; };
+		1294E5E7220B8CA00002260A /* ViewController_Sign_in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Sign_in.swift; sourceTree = "<group>"; };
+		1294E5E9220B8D960002260A /* ViewController_Sign_up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Sign_up.swift; sourceTree = "<group>"; };
 		1F2F3876C426F5C2DABB22DC /* Pods-KFUPMSS_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFUPMSS_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KFUPMSS_iOS/Pods-KFUPMSS_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3A45FD323EA2E5A53B862385 /* Pods-KFUPMSS_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KFUPMSS_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KFUPMSS_iOSTests/Pods-KFUPMSS_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4A98219559DE8F064AC6042A /* Pods_KFUPMSS_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KFUPMSS_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,11 +136,12 @@
 		123AC5A02209FD9B003D51F7 /* KFUPMSS_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				123AC5D3220A0115003D51F7 /* GoogleService-Info.plist */,
+				127E9002220BB0C000004D2B /* GoogleService-Info.plist */,
+				1294E5E5220B8BE90002260A /* kfupm-seal.png */,
+				1294E5E3220B8BE00002260A /* ViewController_ChatRooms.swift */,
 				123AC5A12209FD9B003D51F7 /* AppDelegate.swift */,
 				123AC5A32209FD9B003D51F7 /* RootViewController.swift */,
 				123AC5A52209FD9B003D51F7 /* DataViewController.swift */,
-				0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */,
 				123AC5A72209FD9B003D51F7 /* ModelController.swift */,
 				123AC5A92209FD9B003D51F7 /* Main.storyboard */,
 				123AC5AC2209FD9C003D51F7 /* Assets.xcassets */,
@@ -145,8 +150,9 @@
 				0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */,
 				0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */,
 				0C5109D3220B05F100AB3781 /* icons8-shopping-cart-30.png */,
-				0C5109D7220B05F300AB3781 /* kfupm-seal.png */,
 				123AC5B12209FD9D003D51F7 /* Info.plist */,
+				1294E5E7220B8CA00002260A /* ViewController_Sign_in.swift */,
+				1294E5E9220B8D960002260A /* ViewController_Sign_up.swift */,
 			);
 			path = KFUPMSS_iOS;
 			sourceTree = "<group>";
@@ -301,13 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				123AC5B02209FD9C003D51F7 /* LaunchScreen.storyboard in Resources */,
-				123AC5D4220A0115003D51F7 /* GoogleService-Info.plist in Resources */,
 				123AC5AD2209FD9C003D51F7 /* Assets.xcassets in Resources */,
+				127E9003220BB0C000004D2B /* GoogleService-Info.plist in Resources */,
 				0C5109DB220B05F300AB3781 /* icons8-hostel-filled-30.png in Resources */,
 				123AC5AB2209FD9B003D51F7 /* Main.storyboard in Resources */,
 				0C5109D9220B05F300AB3781 /* icons8-chat-filled-30.png in Resources */,
 				0C5109DA220B05F300AB3781 /* icons8-blog-filled-30.png in Resources */,
-				0C5109DC220B05F300AB3781 /* kfupm-seal.png in Resources */,
+				1294E5E6220B8BE90002260A /* kfupm-seal.png in Resources */,
 				0C5109D8220B05F300AB3781 /* icons8-shopping-cart-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +344,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KFUPMSS_iOS/Pods-KFUPMSS_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -346,6 +353,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -428,10 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1294E5EA220B8D960002260A /* ViewController_Sign_up.swift in Sources */,
+				1294E5E8220B8CA00002260A /* ViewController_Sign_in.swift in Sources */,
 				123AC5A42209FD9B003D51F7 /* RootViewController.swift in Sources */,
 				123AC5A82209FD9B003D51F7 /* ModelController.swift in Sources */,
 				123AC5A62209FD9B003D51F7 /* DataViewController.swift in Sources */,
-				0C5109E2220B75B000AB3781 /* ViewController_ChatRooms.swift in Sources */,
+				1294E5E4220B8BE00002260A /* ViewController_ChatRooms.swift in Sources */,
 				123AC5A22209FD9B003D51F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
