@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Sign in-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController_Sign_in" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,9 @@
                                 <state key="normal" title="sign-in">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6Q-Cv-din"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om7-E0-WDB">
                                 <rect key="frame" x="93" y="397" width="188" height="21"/>
@@ -62,15 +65,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="idField" destination="STC-wG-dLi" id="dVD-Gu-XoI"/>
+                        <outlet property="passwordField" destination="lib-bg-stG" id="YEx-Kh-EXh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="23"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Sign up-->
         <scene sceneID="hYT-qC-5gB">
             <objects>
-                <viewController id="vqo-Pt-1Lm" sceneMemberID="viewController">
+                <viewController id="vqo-Pt-1Lm" customClass="ViewController_Sign_up" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0f-ZY-uns">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +136,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yzg-Eh-ddi" kind="show" id="dgg-q1-1dK"/>
+                                    <action selector="signUp:" destination="vqo-Pt-1Lm" eventType="touchUpInside" id="keW-ma-jMW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alraedy have an account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgF-My-ycs">
@@ -143,6 +150,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FmY-ep-wKN"/>
                     </view>
+                    <connections>
+                        <outlet property="firsNameField" destination="FaZ-2Q-BOO" id="luW-Cd-bEi"/>
+                        <outlet property="idField" destination="MPL-MA-Bc5" id="ZKM-yl-C3T"/>
+                        <outlet property="lastNameField" destination="GWL-Ze-Hcw" id="9hV-1o-IQy"/>
+                        <outlet property="passwordField" destination="LyL-RC-1Xf" id="vbN-0I-jtt"/>
+                        <outlet property="phoneField" destination="XzR-Fx-BiP" id="8lH-26-6UF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zz6-JY-K6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +247,6 @@
         <!--View Controller Chat-->
         <scene sceneID="AXA-uG-7IM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="env-UN-Ivi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="A2Q-WT-9Hj" customClass="ViewController_Chat" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NkO-vR-yaJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -292,6 +305,7 @@
                         <outlet property="myTitle" destination="qwP-9e-jLg" id="g6V-4m-w1i"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="env-UN-Ivi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5205.6000000000004" y="-1015.1424287856073"/>
         </scene>
