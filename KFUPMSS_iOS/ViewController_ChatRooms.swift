@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let list = ["ICS343","SWE316"]
+    var list = ["ICS343","SWE316"]
+    
+     var myIndex = 0
+    
+   
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
@@ -29,6 +33,12 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        
+        performSegue(withIdentifier: "toChat", sender: self)
+        
+    }
 
     /*
     // MARK: - Navigation

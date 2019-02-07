@@ -11,6 +11,12 @@
 		0C5109D9220B05F300AB3781 /* icons8-chat-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */; };
 		0C5109DA220B05F300AB3781 /* icons8-blog-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D5220B05F200AB3781 /* icons8-blog-filled-30.png */; };
 		0C5109DB220B05F300AB3781 /* icons8-hostel-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */; };
+<<<<<<< HEAD
+=======
+		0C5109DC220B05F300AB3781 /* kfupm-seal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109D7220B05F300AB3781 /* kfupm-seal.png */; };
+		0C5109E2220B75B000AB3781 /* ViewController_ChatRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */; };
+		0C5109E4220BAA0A00AB3781 /* ViewController_Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5109E3220BAA0A00AB3781 /* ViewController_Chat.swift */; };
+>>>>>>> pr/4
 		123AC5A22209FD9B003D51F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A12209FD9B003D51F7 /* AppDelegate.swift */; };
 		123AC5A42209FD9B003D51F7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A32209FD9B003D51F7 /* RootViewController.swift */; };
 		123AC5A62209FD9B003D51F7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A52209FD9B003D51F7 /* DataViewController.swift */; };
@@ -52,6 +58,12 @@
 		0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-chat-filled-30.png"; sourceTree = "<group>"; };
 		0C5109D5220B05F200AB3781 /* icons8-blog-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-blog-filled-30.png"; sourceTree = "<group>"; };
 		0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-hostel-filled-30.png"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		0C5109D7220B05F300AB3781 /* kfupm-seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kfupm-seal.png"; path = "../../../../Desktop/KFUPM-space/KFUPM-space/kfupm-seal.png"; sourceTree = "<group>"; };
+		0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController_ChatRooms.swift; path = /Users/m/Documents/GitHub/KFUPMSS_iOS/KFUPMSS_iOS/ViewController_ChatRooms.swift; sourceTree = "<absolute>"; };
+		0C5109E3220BAA0A00AB3781 /* ViewController_Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Chat.swift; sourceTree = "<group>"; };
+>>>>>>> pr/4
 		123AC59E2209FD9B003D51F7 /* KFUPMSS_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFUPMSS_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123AC5A12209FD9B003D51F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123AC5A32209FD9B003D51F7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +154,11 @@
 				123AC5A12209FD9B003D51F7 /* AppDelegate.swift */,
 				123AC5A32209FD9B003D51F7 /* RootViewController.swift */,
 				123AC5A52209FD9B003D51F7 /* DataViewController.swift */,
+<<<<<<< HEAD
+=======
+				0C5109E1220B75B000AB3781 /* ViewController_ChatRooms.swift */,
+				0C5109E3220BAA0A00AB3781 /* ViewController_Chat.swift */,
+>>>>>>> pr/4
 				123AC5A72209FD9B003D51F7 /* ModelController.swift */,
 				123AC5A92209FD9B003D51F7 /* Main.storyboard */,
 				123AC5AC2209FD9C003D51F7 /* Assets.xcassets */,
@@ -436,8 +453,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				1294E5EA220B8D960002260A /* ViewController_Sign_up.swift in Sources */,
 				1294E5E8220B8CA00002260A /* ViewController_Sign_in.swift in Sources */,
+=======
+				0C5109E4220BAA0A00AB3781 /* ViewController_Chat.swift in Sources */,
+>>>>>>> pr/4
 				123AC5A42209FD9B003D51F7 /* RootViewController.swift in Sources */,
 				123AC5A82209FD9B003D51F7 /* ModelController.swift in Sources */,
 				123AC5A62209FD9B003D51F7 /* DataViewController.swift in Sources */,
