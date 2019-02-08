@@ -34,9 +34,7 @@ class ViewController_Sign_up: UIViewController {
         print("Signup starts no problem")
 
         //Signing up User Data
-        
         if let id = idField.text  , let firstName = firsNameField.text  , let lastName = lastNameField.text , let pass = passwordField.text  , let phone =  phoneField.text {
-            
             
             Auth.auth().createUser(withEmail: id+"@kfupm.edu.sa", password: pass, completion: {user, error in if let firebaseError = error{print (firebaseError.localizedDescription)
                 return
@@ -44,11 +42,14 @@ class ViewController_Sign_up: UIViewController {
                 print("success!22")
             })
         }
-
         
         
+        // Move to Main View
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainView = storyboard.instantiateViewController(withIdentifier: "MainView")as! UITabBarController
+        present(mainView, animated: true, completion: nil)
         
-        print("Signup Ends no problem")
+    
     }
     
 }
