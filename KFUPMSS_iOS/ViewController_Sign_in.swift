@@ -20,8 +20,17 @@ class ViewController_Sign_in: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-  //      FirebaseApp.configure()
-        // Do any additional setup after loading the view.
+     
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+      
+        // Move to Main View If user already Signed in
+        if let user = Auth.auth().currentUser {
+            goToMainView()
+            
+        }
     }
     
 
@@ -30,40 +39,29 @@ class ViewController_Sign_in: UIViewController {
         
         if let id = idField.text , let pass = passwordField.text {
             
-            Auth.auth().signIn(withEmail: id+"@kfupm.edu.sa", password: pass) { (user, error) in if let firebaseError = error{print (firebaseError.localizedDescription)
+            Auth.auth().signIn(withEmail: "s"+id+"@kfupm.edu.sa", password: pass) { (user, error) in if let firebaseError = error{print (firebaseError.localizedDescription)
                 return
                 }
-                print("success!22")
+                
+                // Move to Main View
+                 self.goToMainView()
+               
             }
         }
-
         
         
-        // Move to Main View
+    }
+    
+    
+    
+    func goToMainView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainView = storyboard.instantiateViewController(withIdentifier: "MainView")as! UITabBarController
         present(mainView, animated: true, completion: nil)
-        
-        
     }
     
     
     
     
-    
-    
-    
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }

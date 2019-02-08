@@ -25,9 +25,20 @@ class ViewController_Sign_up: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
 
     }
     
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+       
+        // Move to Main View If user already Signed in 
+        if let user = Auth.auth().currentUser {
+            goToMainView()
+            
+        }
+    }
 
   
     @IBAction func signUp(_ sender: Any) {
@@ -39,17 +50,20 @@ class ViewController_Sign_up: UIViewController {
             Auth.auth().createUser(withEmail: id+"@kfupm.edu.sa", password: pass, completion: {user, error in if let firebaseError = error{print (firebaseError.localizedDescription)
                 return
                 }
-                print("success!22")
+               
+                // Move to Main View if process sign up success
+                self.goToMainView()
             })
         }
         
-        
-        // Move to Main View
+
+    }
+    
+    
+    func goToMainView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainView = storyboard.instantiateViewController(withIdentifier: "MainView")as! UITabBarController
         present(mainView, animated: true, completion: nil)
-        
-    
     }
     
 }
