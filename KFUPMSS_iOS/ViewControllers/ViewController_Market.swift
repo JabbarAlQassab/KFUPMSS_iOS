@@ -11,7 +11,7 @@ import UIKit
 class ViewController_Market: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    let dataArray = ["aa","bb","cc"]
+    let dataArray = ["aa","bb","cc", "dd","ff","hh","jj","kk","ll"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
