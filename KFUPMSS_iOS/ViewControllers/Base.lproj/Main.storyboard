@@ -322,7 +322,7 @@
         <!--Market-->
         <scene sceneID="Bvh-Kz-KS8">
             <objects>
-                <viewController id="jp6-X5-MaG" customClass="ViewController_Market" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jp6-X5-MaG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ie-Yk-0Uk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -330,7 +330,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="URe-ca-KiM">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97252808549861214" green="0.97252808549861214" blue="0.97252808549861214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fwt-IV-cXx">
                                     <size key="itemSize" width="180" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -338,14 +338,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MarketItem" id="FUe-3F-rRJ" customClass="CollectionViewCell_Market_Item" customModule="KFUPMSS_iOS" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MarketItem" id="FUe-3F-rRJ" customClass="Coll">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ps4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aev-XW-YhJ">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aev-XW-YhJ">
                                                     <rect key="frame" x="10" y="20" width="161" height="97"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -358,7 +358,6 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -367,9 +366,6 @@
                         <viewLayoutGuide key="safeArea" id="Tbd-tN-xJY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Market" id="78A-6b-TG7"/>
-                    <connections>
-                        <outlet property="collectionView" destination="URe-ca-KiM" id="MPP-Yp-f5n"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCc-op-IgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,7 +418,6 @@
         <image name="icons8-chat-filled-30.png" width="30" height="30"/>
         <image name="icons8-hostel-filled-30.png" width="30" height="30"/>
         <image name="icons8-shopping-cart-30.png" width="30" height="30"/>
-        <image name="ps4.jpg" width="1153" height="1094"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4vs-c1-Hdz"/>
