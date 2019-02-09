@@ -20,13 +20,13 @@ class ViewController_Sign_up: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var phoneField: UITextField!
     
-    
+    var ref : DatabaseReference?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-
+        
+        ref = Database.database().reference()
     }
     
     
@@ -34,7 +34,7 @@ class ViewController_Sign_up: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
        
         // Move to Main View If user already Signed in 
-        if let user = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil {
             goToMainView()
             
         }
@@ -42,16 +42,17 @@ class ViewController_Sign_up: UIViewController {
 
   
     @IBAction func signUp(_ sender: Any) {
-        print("Signup starts no problem")
-
+   
         //Signing up User Data
         if let id = idField.text  , let firstName = firsNameField.text  , let lastName = lastNameField.text , let pass = passwordField.text  , let phone =  phoneField.text {
-            
+            //try Signing up user
             Auth.auth().createUser(withEmail: id+"@kfupm.edu.sa", password: pass, completion: {user, error in if let firebaseError = error{print (firebaseError.localizedDescription)
                 return
                 }
-               
-                // Move to Main View if process sign up success
+                //Add user data to FireBase under User branch
+                self.ref?.child("User").childByAutoId().setValue(["email": "s"+id+"@kfupm.edu.sa", "firstName":firstName, "lastName": lastName, "phone": phone ])
+                
+                // Move to Main View if sign up process succeeded
                 self.goToMainView()
             })
         }
@@ -59,6 +60,8 @@ class ViewController_Sign_up: UIViewController {
 
     }
     
+    
+   
     
     func goToMainView() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -27,7 +27,7 @@ class ViewController_Sign_in: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
       
         // Move to Main View If user already Signed in
-        if let user = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil {
             goToMainView()
             
         }
@@ -35,17 +35,14 @@ class ViewController_Sign_in: UIViewController {
     
 
     @IBAction func signIn(_ sender: Any) {
-        print("No problem")
-        
+       
         if let id = idField.text , let pass = passwordField.text {
-            
+            //try signing in
             Auth.auth().signIn(withEmail: "s"+id+"@kfupm.edu.sa", password: pass) { (user, error) in if let firebaseError = error{print (firebaseError.localizedDescription)
                 return
                 }
-                
-                // Move to Main View
+                // Move to Main View if sign in process succeeeded
                  self.goToMainView()
-               
             }
         }
         
