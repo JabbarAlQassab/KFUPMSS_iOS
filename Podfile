@@ -6,9 +6,10 @@ target 'KFUPMSS_iOS' do
   use_frameworks!
 
   # Pods for KFUPMSS_iOS
-	pod 'Firebase/Core'
-	pod 'Firebase/Database'
-	pod 'Firebase/Auth'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'JSQMessagesViewController'
 
   target 'KFUPMSS_iOSTests' do
     inherit! :search_paths
