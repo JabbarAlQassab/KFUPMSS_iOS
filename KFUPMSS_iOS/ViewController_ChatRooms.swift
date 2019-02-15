@@ -12,8 +12,8 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
     var list = ["ICS343","SWE316"]
     
      var myIndex = 0
-    
-   
+
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
@@ -22,7 +22,8 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "chatRoom")
         cell.textLabel?.text = list[indexPath.row]
-        
+    
+    
        return(cell)
    }
     

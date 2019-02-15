@@ -52,7 +52,6 @@
                                 </state>
                                 <connections>
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K6Q-Cv-din"/>
-                                    <segue destination="A2Q-WT-9Hj" kind="show" id="IVf-u1-YWs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account ? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om7-E0-WDB">
@@ -163,7 +162,31 @@
             </objects>
             <point key="canvasLocation" x="2092" y="23"/>
         </scene>
-        <!--Blog-->
+        <!--News-->
+        <scene sceneID="pio-qE-EzD">
+            <objects>
+                <viewController id="PJF-m6-Qmy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8y6-MM-wD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="f2F-2w-nql"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="News" id="Uzk-1Z-xit">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ZCg-Mv-TVx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DuY-0I-2ry">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShJ-Vs-wUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4148" y="2402"/>
+        </scene>
+        <!--Bolg-->
         <scene sceneID="hcU-Cl-bP1">
             <objects>
                 <viewController id="93S-gf-fAb" sceneMemberID="viewController">
@@ -173,13 +196,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="y0Q-cS-hgM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Blog" image="icons8-blog-filled-30.png" id="QLy-l8-gXX"/>
+                    <navigationItem key="navigationItem" title="Bolg" id="wYD-wp-z0U">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="RJ6-Yg-qUT">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jm3-R2-AOl">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cfy-s5-qfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4281" y="1218"/>
+            <point key="canvasLocation" x="6159.1999999999998" y="1217.5412293853074"/>
         </scene>
-        <!--Roommate-->
+        <!--Roomate-->
         <scene sceneID="it3-ir-WYJ">
             <objects>
                 <viewController id="VZp-91-nKh" sceneMemberID="viewController">
@@ -189,13 +220,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ewd-es-oZl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Roommate" image="icons8-hostel-filled-30.png" id="36U-ni-Jhv"/>
+                    <navigationItem key="navigationItem" title="Roomate" id="idp-lw-g7v">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="onc-eb-1DK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PKz-mT-wKn">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mlU-y8-8pW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4281" y="-2416"/>
+            <point key="canvasLocation" x="5220" y="-2416.6416791604202"/>
         </scene>
-        <!--chat-->
+        <!--Chat-->
         <scene sceneID="aaP-PA-jkc">
             <objects>
                 <viewController id="nqm-Zh-vTj" customClass="ViewController_ChatRooms" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,7 +243,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yPq-xK-GEQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatRoom" rowHeight="101" id="3vq-97-mgi">
@@ -236,19 +275,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g4T-qI-9dh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="chat" image="icons8-chat-filled-30.png" id="fbb-ze-G2q"/>
+                    <navigationItem key="navigationItem" title="Chat" id="nSl-yp-Z1N">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-30.png" style="plain" id="S4I-op-evY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p7I-Oy-sQE">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="A2Q-WT-9Hj" kind="show" identifier="toChat" id="3M1-fo-GMt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzB-7L-SYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280.8000000000002" y="-1015.1424287856073"/>
+            <point key="canvasLocation" x="5220" y="-1015.1424287856073"/>
         </scene>
         <!--massege-->
         <scene sceneID="AXA-uG-7IM">
             <objects>
-                <viewController id="A2Q-WT-9Hj" customClass="ViewController_Chat" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="A2Q-WT-9Hj" customClass="ViewController_Chat" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NkO-vR-yaJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="env-UN-Ivi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5205.6000000000004" y="-1015.1424287856073"/>
+            <point key="canvasLocation" x="6144.8000000000002" y="-1015.1424287856073"/>
         </scene>
         <!--Market-->
         <scene sceneID="Bvh-Kz-KS8">
@@ -271,13 +318,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Tbd-tN-xJY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Market" image="icons8-shopping-cart-30.png" id="cfv-wE-l42">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Market" id="DW1-Hr-kdN">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="FQE-r0-5BB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oGI-xO-Ka8">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCc-op-IgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4281" y="235"/>
+            <point key="canvasLocation" x="6159.1999999999998" y="234.33283358320841"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ygv-Tc-3Vu">
@@ -289,24 +342,121 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nqm-Zh-vTj" kind="relationship" relationship="viewControllers" id="4vs-c1-Hdz"/>
-                        <segue destination="93S-gf-fAb" kind="relationship" relationship="viewControllers" id="gKA-jc-1ur"/>
-                        <segue destination="VZp-91-nKh" kind="relationship" relationship="viewControllers" id="6Dy-I1-BN5"/>
-                        <segue destination="jp6-X5-MaG" kind="relationship" relationship="viewControllers" id="cCP-4b-VQa"/>
+                        <segue destination="7WB-QC-gaF" kind="relationship" relationship="viewControllers" id="4vs-c1-Hdz"/>
+                        <segue destination="Bh3-44-1Ia" kind="relationship" relationship="viewControllers" id="gKA-jc-1ur"/>
+                        <segue destination="GG4-c3-70V" kind="relationship" relationship="viewControllers" id="Y7Z-6B-IvZ"/>
+                        <segue destination="t3M-tP-iSy" kind="relationship" relationship="viewControllers" id="6Dy-I1-BN5"/>
+                        <segue destination="dX4-F0-8Xi" kind="relationship" relationship="viewControllers" id="cCP-4b-VQa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5g-it-SJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="23"/>
+            <point key="canvasLocation" x="3297" y="23"/>
+        </scene>
+        <!--chat-->
+        <scene sceneID="5Hr-0h-fdF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WB-QC-gaF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="chat" image="icons8-chat-filled-30.png" id="fbb-ze-G2q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uiS-sP-bbN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nqm-Zh-vTj" kind="relationship" relationship="rootViewController" id="6Xc-v3-98B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="029-pd-jxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4280.8000000000002" y="-1015.1424287856073"/>
+        </scene>
+        <!--Market-->
+        <scene sceneID="Cld-BN-Si6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dX4-F0-8Xi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Market" image="icons8-shopping-cart-30.png" id="cfv-wE-l42">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GEn-Kn-JgF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jp6-X5-MaG" kind="relationship" relationship="rootViewController" id="FKM-1i-Dm0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYp-5T-Cqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5220" y="234.33283358320841"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="jw8-h9-2Ig">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GG4-c3-70V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="icons8-news-30.png" id="lS8-dy-z6O"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="508-MZ-Ymw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PJF-m6-Qmy" kind="relationship" relationship="rootViewController" id="MHt-Tu-v7Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbQ-qV-XM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3108" y="2403"/>
+        </scene>
+        <!--Blog-->
+        <scene sceneID="8IR-PU-lAo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bh3-44-1Ia" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Blog" image="icons8-blog-filled-30.png" id="QLy-l8-gXX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tij-gc-Wx8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="93S-gf-fAb" kind="relationship" relationship="rootViewController" id="87n-c3-254"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60v-mA-HdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5220" y="1217.5412293853074"/>
+        </scene>
+        <!--Roommate-->
+        <scene sceneID="7zb-5V-qyV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3M-tP-iSy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Roommate" image="icons8-hostel-filled-30.png" id="36U-ni-Jhv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cyM-iT-7S6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VZp-91-nKh" kind="relationship" relationship="rootViewController" id="5PL-GT-e0q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqS-3I-fh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4280.8000000000002" y="-2416.6416791604202"/>
         </scene>
     </scenes>
     <resources>
         <image name="icons8-blog-filled-30.png" width="30" height="30"/>
         <image name="icons8-chat-filled-30.png" width="30" height="30"/>
         <image name="icons8-hostel-filled-30.png" width="30" height="30"/>
+        <image name="icons8-menu-filled-30.png" width="30" height="30"/>
+        <image name="icons8-news-30.png" width="30" height="30"/>
         <image name="icons8-shopping-cart-30.png" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="IVf-u1-YWs"/>
-    </inferredMetricsTieBreakers>
 </document>

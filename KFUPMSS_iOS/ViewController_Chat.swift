@@ -11,6 +11,7 @@ import UIKit
 import JSQMessagesViewController
 
 
+
 struct User{
     let id: String
     let name: String
@@ -20,6 +21,7 @@ class ViewController_Chat: JSQMessagesViewController  {
     
     let user1 = User(id: "1", name: "Steve")
     let user2 = User(id: "2", name: "Tim")
+    
     
     
     var currentUser: User {
