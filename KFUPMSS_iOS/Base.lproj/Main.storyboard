@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3G-o1-QG3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -237,7 +237,7 @@
         <!--Chat-->
         <scene sceneID="aaP-PA-jkc">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="nqm-Zh-vTj" customClass="ViewController_ChatRooms" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nqm-Zh-vTj" customClass="ViewController_ChatRooms" customModule="KFUPMSS_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kg3-Kf-bd0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,16 +276,21 @@
                         <viewLayoutGuide key="safeArea" id="g4T-qI-9dh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="nSl-yp-Z1N">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-30.png" id="Tj4-Wp-kSB"/>
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-30.png" style="plain" id="S4I-op-evY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p7I-Oy-sQE">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-menu-filled-30.png"/>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MenuButton" destination="Tj4-Wp-kSB" id="6KE-IM-HZl"/>
                         <segue destination="A2Q-WT-9Hj" kind="show" identifier="toChat" id="3M1-fo-GMt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzB-7L-SYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6425" y="-1041"/>
+            <point key="canvasLocation" x="5220" y="-1015.1424287856073"/>
         </scene>
         <!--massege-->
         <scene sceneID="AXA-uG-7IM">
@@ -301,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="env-UN-Ivi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7350" y="-1041"/>
+            <point key="canvasLocation" x="6144.8000000000002" y="-1015.1424287856073"/>
         </scene>
         <!--Market-->
         <scene sceneID="Bvh-Kz-KS8">
@@ -346,6 +351,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5g-it-SJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2993" y="23"/>
         </scene>
         <!--Reveal View Controller-->
@@ -414,6 +420,9 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3E5-rE-e6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3216.8000000000002" y="-1376.7616191904049"/>
+=======
+            <point key="canvasLocation" x="3297" y="23"/>
+>>>>>>> parent of b62b5f4... side bar is done
         </scene>
         <!--chat-->
         <scene sceneID="5Hr-0h-fdF">
@@ -432,7 +441,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="029-pd-jxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5486" y="-1041"/>
+            <point key="canvasLocation" x="4280.8000000000002" y="-1015.1424287856073"/>
         </scene>
         <!--Market-->
         <scene sceneID="Cld-BN-Si6">
@@ -521,7 +530,4 @@
         <image name="icons8-news-30.png" width="30" height="30"/>
         <image name="icons8-shopping-cart-30.png" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="tDK-Vl-Lzx"/>
-    </inferredMetricsTieBreakers>
 </document>
