@@ -13,7 +13,8 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
     
      var myIndex = 0
 
-
+    @IBOutlet weak var MenuButton: UIBarButtonItem!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)
@@ -32,6 +33,16 @@ class ViewController_ChatRooms: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.tabBarController = self.tabBarController
+        
+        MenuButton.target = revealViewController()
+        MenuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        
+        revealViewController().tapGestureRecognizer()
+        revealViewController().panGestureRecognizer()
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
