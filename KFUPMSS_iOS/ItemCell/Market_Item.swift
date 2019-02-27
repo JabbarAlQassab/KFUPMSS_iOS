@@ -11,6 +11,8 @@ import UIKit
 class Market_Item: UICollectionViewCell {
     
     @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var itemPrice: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
     
     
     override func awakeFromNib() {
@@ -18,8 +20,12 @@ class Market_Item: UICollectionViewCell {
         // Initialization code
     }
     
-    func setData(text: String){
+    func setData(text: String  , price: String){
         self.itemLabel.text = text
+        self.itemPrice.text = price
+        
+        
+        
     }
 
 }
