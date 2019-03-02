@@ -276,7 +276,9 @@
                         <viewLayoutGuide key="safeArea" id="g4T-qI-9dh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" id="nSl-yp-Z1N">
-                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-30.png" id="Tj4-Wp-kSB"/>
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-filled-30.png" id="Tj4-Wp-kSB">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="MenuButton" destination="Tj4-Wp-kSB" id="6KE-IM-HZl"/>
@@ -360,40 +362,76 @@
                     </view>
                     <connections>
                         <segue destination="yzg-Eh-ddi" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="k1u-ek-Wrg"/>
-                        <segue destination="ds3-Tl-M0C" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="LuS-Sq-w9W"/>
+                        <segue destination="RbI-mm-cVj" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="VL4-qg-vwl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqf-zw-Ylu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2455" y="-992"/>
+            <point key="canvasLocation" x="2210" y="-1001"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="YB5-yt-Pca">
+        <!--View Controller-->
+        <scene sceneID="Ln3-K6-Q65">
             <objects>
-                <tableViewController id="ds3-Tl-M0C" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s8h-qI-uqp">
+                <viewController id="RbI-mm-cVj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CPu-Y9-8dO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZN-fV-cEM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-tl-44X">
+                                        <rect key="frame" x="8" y="161" width="204" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-male-user-100.png" translatesAutoresizingMaskIntoConstraints="NO" id="iW3-ls-Uip">
+                                        <rect key="frame" x="8" y="48" width="106" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.099691478299999997" green="0.46551165799999999" blue="0.1358489252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zt0-D4-XEJ">
+                                <rect key="frame" x="8" y="232" width="152" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="     Profile" image="icons8-user-48.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vai-s1-QIZ">
+                                <rect key="frame" x="13" y="288" width="142" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="     Utilities" image="icons8-page-48.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-Mo-Pej">
+                                <rect key="frame" x="19" y="344" width="118" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="       Files" image="icons8-shared-document-48.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-GH-bo6">
+                                <rect key="frame" x="19" y="412" width="136" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="     Log Out" image="icons8-exit-48.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0Xj-HT-gzb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Xj-HT-gzb" id="moN-N1-jrg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ds3-Tl-M0C" id="XFg-3W-EEM"/>
-                            <outlet property="delegate" destination="ds3-Tl-M0C" id="n8f-Tt-AKb"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="max-NA-N3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="1ok-Pk-dFG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fK-rY-kvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3246" y="-1432"/>
+            <point key="canvasLocation" x="3208.8000000000002" y="-1121.2893553223389"/>
         </scene>
         <!--chat-->
         <scene sceneID="5Hr-0h-fdF">
@@ -496,10 +534,15 @@
     <resources>
         <image name="icons8-blog-filled-30.png" width="30" height="30"/>
         <image name="icons8-chat-filled-30.png" width="30" height="30"/>
+        <image name="icons8-exit-48.png" width="48" height="48"/>
         <image name="icons8-hostel-filled-30.png" width="30" height="30"/>
+        <image name="icons8-male-user-100.png" width="100" height="100"/>
         <image name="icons8-menu-filled-30.png" width="30" height="30"/>
         <image name="icons8-news-30.png" width="30" height="30"/>
+        <image name="icons8-page-48.png" width="48" height="48"/>
+        <image name="icons8-shared-document-48.png" width="48" height="48"/>
         <image name="icons8-shopping-cart-30.png" width="30" height="30"/>
+        <image name="icons8-user-48.png" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tDK-Vl-Lzx"/>

@@ -17,6 +17,11 @@
 		0C5109E822172AA000AB3781 /* icons8-menu-filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109E722172A9F00AB3781 /* icons8-menu-filled-30.png */; };
 		0C5109EA22177D3000AB3781 /* icons8-news-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5109E922177D2F00AB3781 /* icons8-news-30.png */; };
 		0C5109EE222327D500AB3781 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5109EC222327D500AB3781 /* SWRevealViewController.m */; };
+		0C68E748222B1CCF00915971 /* icons8-user-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C68E747222B1CCD00915971 /* icons8-user-48.png */; };
+		0C68E74A222B1E0900915971 /* icons8-page-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C68E749222B1E0900915971 /* icons8-page-48.png */; };
+		0C68E74C222B1F0400915971 /* icons8-shared-document-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C68E74B222B1F0300915971 /* icons8-shared-document-48.png */; };
+		0C68E74E222B1F7D00915971 /* icons8-exit-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C68E74D222B1F7D00915971 /* icons8-exit-48.png */; };
+		0C68E750222B1FE900915971 /* icons8-male-user-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C68E74F222B1FE800915971 /* icons8-male-user-100.png */; };
 		120BE751220CC282000F630B /* ViewController_Sign_up.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BE750220CC282000F630B /* ViewController_Sign_up.swift */; };
 		123AC5A22209FD9B003D51F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A12209FD9B003D51F7 /* AppDelegate.swift */; };
 		123AC5A42209FD9B003D51F7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AC5A32209FD9B003D51F7 /* RootViewController.swift */; };
@@ -63,6 +68,11 @@
 		0C5109EB222327D400AB3781 /* KFUPMSS_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KFUPMSS_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C5109EC222327D500AB3781 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0C5109ED222327D500AB3781 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0C68E747222B1CCD00915971 /* icons8-user-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-user-48.png"; sourceTree = "<group>"; };
+		0C68E749222B1E0900915971 /* icons8-page-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-page-48.png"; sourceTree = "<group>"; };
+		0C68E74B222B1F0300915971 /* icons8-shared-document-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-shared-document-48.png"; sourceTree = "<group>"; };
+		0C68E74D222B1F7D00915971 /* icons8-exit-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-exit-48.png"; sourceTree = "<group>"; };
+		0C68E74F222B1FE800915971 /* icons8-male-user-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-male-user-100.png"; sourceTree = "<group>"; };
 		120BE750220CC282000F630B /* ViewController_Sign_up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_Sign_up.swift; sourceTree = "<group>"; };
 		123AC59E2209FD9B003D51F7 /* KFUPMSS_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFUPMSS_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123AC5A12209FD9B003D51F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +169,11 @@
 				0C5109D4220B05F200AB3781 /* icons8-chat-filled-30.png */,
 				0C5109D6220B05F200AB3781 /* icons8-hostel-filled-30.png */,
 				0C5109E722172A9F00AB3781 /* icons8-menu-filled-30.png */,
+				0C68E74B222B1F0300915971 /* icons8-shared-document-48.png */,
+				0C68E749222B1E0900915971 /* icons8-page-48.png */,
+				0C68E74F222B1FE800915971 /* icons8-male-user-100.png */,
+				0C68E74D222B1F7D00915971 /* icons8-exit-48.png */,
+				0C68E747222B1CCD00915971 /* icons8-user-48.png */,
 				0C5109E922177D2F00AB3781 /* icons8-news-30.png */,
 				0C5109D3220B05F100AB3781 /* icons8-shopping-cart-30.png */,
 				127E9006220BCFF500004D2B /* kfupm-seal.png */,
@@ -325,14 +340,19 @@
 			files = (
 				127E9007220BCFF500004D2B /* kfupm-seal.png in Resources */,
 				123AC5B02209FD9C003D51F7 /* LaunchScreen.storyboard in Resources */,
+				0C68E74E222B1F7D00915971 /* icons8-exit-48.png in Resources */,
 				0C5109E6220E36E200AB3781 /* GoogleService-Info.plist in Resources */,
 				123AC5AD2209FD9C003D51F7 /* Assets.xcassets in Resources */,
+				0C68E750222B1FE900915971 /* icons8-male-user-100.png in Resources */,
 				0C5109DB220B05F300AB3781 /* icons8-hostel-filled-30.png in Resources */,
 				123AC5AB2209FD9B003D51F7 /* Main.storyboard in Resources */,
 				0C5109EA22177D3000AB3781 /* icons8-news-30.png in Resources */,
 				0C5109D9220B05F300AB3781 /* icons8-chat-filled-30.png in Resources */,
 				0C5109DA220B05F300AB3781 /* icons8-blog-filled-30.png in Resources */,
+				0C68E74C222B1F0400915971 /* icons8-shared-document-48.png in Resources */,
 				0C5109D8220B05F300AB3781 /* icons8-shopping-cart-30.png in Resources */,
+				0C68E74A222B1E0900915971 /* icons8-page-48.png in Resources */,
+				0C68E748222B1CCF00915971 /* icons8-user-48.png in Resources */,
 				0C5109E822172AA000AB3781 /* icons8-menu-filled-30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
